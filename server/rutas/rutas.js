@@ -55,7 +55,7 @@ app.post('/datos',(req,res)=>{
 		long: body.long,
 		anio: fecha.getFullYear(),
 		mes: fecha.getMonth(),
-		dia: fecha.getDay(),
+		dia: fecha.getDate(),
 		hora: fecha.getHours()-5,
 		minuto: fecha.getMinutes()
 	})
