@@ -15,7 +15,7 @@ let urlDataBase;
 if(process.env.NODE_ENV === 'dev'){
 	urlDataBase = 'mongodb://localhost:27017/tesis';
 }else{
-	urlDataBase = 'mongodb+srv://complex:R6D9YbvlSwE6Qjri@cluster0.vrxbv.mongodb.net/tesis';
+	urlDataBase = process.env.MONGO_URI;
 }
 
 process.env.urlDataBase = urlDataBase; 
