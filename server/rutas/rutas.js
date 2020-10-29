@@ -56,7 +56,7 @@ app.post('/datos',(req,res)=>{
 		anio: fecha.getFullYear(),
 		mes: fecha.getMonth(),
 		dia: fecha.getDay(),
-		hora: fecha.getHours(),
+		hora: fecha.getHours()-5,
 		minuto: fecha.getMinutes()
 	})
 	datos.save((err,datoBd)=>{
